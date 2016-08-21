@@ -7,8 +7,7 @@ Pod::Spec.new do |s|
   s.source       = {:git => 'https://github.com/linhan6177/QQSDK.git' }
   s.ios.deployment_target = '7.0'
   s.requires_arc = true
-  s.source_files = 'sources/*.{h,m}'
-  s.vendored_libraries = 'sources/TencentOpenAPI.framework'
+  s.resource     = 'sources/**/*.framework'
   s.frameworks   = 'SystemConfiguration'
   s.libraries = 'sqlite3', 'z', 'c++'
 end
